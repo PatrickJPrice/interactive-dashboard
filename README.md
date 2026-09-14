@@ -14,4 +14,4 @@ This project is a web-based dashboard built for WEB-115 to demonstrate interacti
 This feature lets people type in their name, daily goals, and bonus tasks. 
 JavaScript then multiplies the daily goal by 5 workdays and adds the bonuses to show the total weekly goal.
 
-t
+
