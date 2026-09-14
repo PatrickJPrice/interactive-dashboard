@@ -5,3 +5,23 @@ body {
 h1 {
     font-family: Arial, sans-serif;
 }
+
+#weekly-tasks form div {
+    margin-bottom: 15px;
+}
+
+#weekly-tasks label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#weekly-tasks input {
+    padding: 6px;
+    width: 100%;
+    max-width: 300px;
+}
+
+#weekly-tasks button {
+    padding: 8px 15px;
+}
