@@ -6,6 +6,7 @@ h1 {
     font-family: Arial, sans-serif;
 }
 
+/* Weekly Tasks Section */
 #weekly-tasks form div {
     margin-bottom: 15px;
 }
@@ -24,4 +25,31 @@ h1 {
 
 #weekly-tasks button {
     padding: 8px 15px;
+}
+
+/* Metric Converter Section */
+#metric-converter form div {
+    margin-bottom: 15px;
+}
+
+#metric-converter label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#metric-converter input,
+#metric-converter select {
+    padding: 6px;
+    width: 100%;
+    max-width: 300px;
+}
+
+#metric-converter button {
+    padding: 8px 15px;
+}
+
+#converter-output {
+    margin-top: 15px;
+    font-weight: bold;
 }

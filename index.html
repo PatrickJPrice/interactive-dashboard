@@ -25,6 +25,7 @@
         <div class="row">
             <!-- Dashboard Content -->
             <div class="col" id="weekly-tasks">
+                <h2>Weekly Task Goals</h2>
                 <form>
                     <div>
                         <label for="name">Name:</label>
@@ -41,6 +42,33 @@
                     <button type="button" id="goal-btn">Submit</button>
                 </form>
                 <p id="goal-message"></p>
+            </div>
+
+            <!-- Imperial / Metric Converter -->
+            <div class="col" id="metric-converter">
+                <h2>Imperial / Metric Converter</h2>
+                <form id="converter-form">
+                    <div>
+                        <label for="conversion-input">Value:</label>
+                        <input type="number" id="conversion-input" step="any" placeholder="Enter number" required>
+                    </div>
+                    <div>
+                        <label for="conversion-type">Conversion Type:</label>
+                        <select id="conversion-type">
+                            <option value="inch-to-cm">Inches to Centimeters</option>
+                            <option value="cm-to-inch">Centimeters to Inches</option>
+                            <option value="foot-to-m">Feet to Meters</option>
+                            <option value="m-to-foot">Meters to Feet</option>
+                            <option value="yard-to-m">Yards to Meters</option>
+                            <option value="m-to-yard">Meters to Yards</option>
+                            <option value="mile-to-km">Miles to Kilometers</option>
+                            <option value="km-to-mile">Kilometers to Miles</option>
+                        </select>
+                    </div>
+                    <button type="submit" id="convert-btn">Convert</button>
+                </form>
+                <div id="converter-output"></div>
+                <script defer src="js/metric-converter.js"></script>
             </div>
         </div>
     </div>
