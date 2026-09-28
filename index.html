@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Interactive Dashboard</title>
     <link rel="stylesheet" href="css/style.css">
-    <!-- Bootstrap  -->
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </head>
@@ -17,13 +17,13 @@
     <script>
         document.write("This dashboard demonstrates how JavaScript can be used to create interactive websites.");
     </script>
-    <!-- The <noscript> is for web browsers with JavaScript rendering disabled. -->
     <noscript>
         Unfortunately, your web browser does not support JavaScript.
     </noscript>
+
     <div class="container">
         <div class="row">
-            <!-- Dashboard Content -->
+            <!-- Weekly Tasks Goal Column -->
             <div class="col" id="weekly-tasks">
                 <h2>Weekly Task Goals</h2>
                 <form>
@@ -44,7 +44,7 @@
                 <p id="goal-message"></p>
             </div>
 
-            <!-- Imperial / Metric Converter -->
+            <!-- Imperial / Metric Converter Column -->
             <div class="col" id="metric-converter">
                 <h2>Imperial / Metric Converter</h2>
                 <form id="converter-form">
@@ -70,10 +70,30 @@
                 <div id="converter-output"></div>
                 <script defer src="js/metric-converter.js"></script>
             </div>
+
+            <!-- Magic Eight Ball Column -->
+            <div class="col" id="magic-eight-ball">
+                <script src="js/magic-eight-ball.js" defer></script>
+                <link rel="stylesheet" href="css/magic-eight-ball.css">
+                <h2 class="heading">Magic Eight Ball</h2>
+                <form>
+                    <p>Type a yes/no question below, then click on the Eight Ball below to get your answer!</p>
+                    <input id="question" name="question" class="form-control mb-2" placeholder="Ask a question...">
+                    <div id="magicEightBall">
+                        <div id="circle"></div>
+                        <img id="ball" src="img/magic-eight-ball.png" alt="Magic Eight Ball"/>
+                    </div>
+                    <button id="reset" name="reset" type="reset" class="btn btn-secondary mt-2">Ask another question</button>
+                    <!-- Bonus Challenge Button -->
+                    <button id="add-response-btn" type="button" class="btn btn-outline-primary mt-2">Add Custom Response</button>
+                </form>
+                <br>
+            </div>
+
         </div>
     </div>
 
-    <!-- Script tag is now safely at the bottom after all HTML elements load -->
+    <!-- Script tag for task-manager -->
     <script src="js/task-manager.js"></script>
 </body>
 </html>

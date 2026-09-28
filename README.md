@@ -5,9 +5,20 @@ This project is a web-based dashboard built for WEB-115 to demonstrate interacti
 ## TODO: Future Enhancements
 
 - [x] Add a metric conversion tool.
+- [x] Add a Magic Eight Ball game.
 - [ ] Integrate a task list with array storage.
 - [ ] Add JavaScript logic for a live clock.
 - [x] Add a weekly task goal calculator
+
+## Magic Eight Ball
+
+The Magic Eight Ball feature allows users to type a yes/no question into a form field, click on the Eight Ball image, and view a randomly selected response.
+
+### Features
+* **Input Checking:** Validates that a question was entered before running, alerting the user if the input field is empty.
+* **Randomized Output:** Uses `Math.random()` and `Math.floor()` to select a random answer from an array and display it inside the white center circle.
+* **Reset Button:** Clears and hides the inner circle display when clicked.
+* **Add Response Button (Bonus):** Prompts the user to enter a new response to push into the answers array, then logs the new answer and updated array length to the browser console.
 
 ## Imperial/Metric Converter
 

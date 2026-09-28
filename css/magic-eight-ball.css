@@ -1,8 +1,12 @@
-
 #magic-eight-ball {
   max-width: 410px;
   text-align: center;
   margin: auto;
+}
+
+#magicEightBall {
+  position: relative;
+  display: inline-block;
 }
 
 #circle {
@@ -10,15 +14,16 @@
   background-color: white;
   color: black;
   position: absolute;
-  margin-left: 70px;
-  margin-top: 70px;
-  height: 150px;
-  width: 150px;
+  margin-left: 67px;
+  margin-top: 67px;
+  height: 156px;
+  width: 156px;
   border-radius: 50%;
-  text-wrap: wrap;
   display: none;
+  text-align: center;
+  padding: 55px 15px 15px 15px; /* Increased top padding to push text down further */
+  box-sizing: border-box;
 }
-
 
 img:active {
   animation: shake 1s;
@@ -28,8 +33,9 @@ img:active {
 img:visited {
   animation: none;
 }
+
 @keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg);  }
+  0% { transform: translate(1px, 1px) rotate(0deg); }
   10% { transform: translate(-1px, -2px) rotate(-1deg); }
   20% { transform: translate(-3px, 0px) rotate(1deg); }
   30% { transform: translate(3px, 2px) rotate(0deg); }
@@ -41,3 +47,4 @@ img:visited {
   90% { transform: translate(1px, 2px) rotate(0deg); }
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
+
