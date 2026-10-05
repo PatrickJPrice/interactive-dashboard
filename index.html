@@ -42,6 +42,17 @@
                     <button type="button" id="goal-btn">Submit</button>
                 </form>
                 <p id="goal-message"></p>
+
+                <!-- Step 2: Task List Container -->
+                <div id="task-list">
+                    <h3>Weekly Task List</h3>
+                    <p>Enter a task below to manage your goals.</p>
+                    <form>
+                        <label for="task-name">Enter task:</label>
+                        <input type="text" id="task-name" name="task-name">
+                        <button type="button" id="add-task">Add Task</button>
+                    </form>
+                </div>
             </div>
 
             <!-- Imperial / Metric Converter Column -->
@@ -94,6 +105,6 @@
     </div>
 
     <!-- Script tag for task-manager -->
-    <script src="js/task-manager.js"></script>
+    <script src="js/task-manager.js" defer></script>
 </body>
 </html>
