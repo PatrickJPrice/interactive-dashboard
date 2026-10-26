@@ -43,14 +43,32 @@
                 </form>
                 <p id="goal-message"></p>
 
-                <!-- Step 2: Task List Container -->
+                <!-- Module 9: Updated Task List Form & Controls -->
                 <div id="task-list">
                     <h3>Weekly Task List</h3>
                     <p>Enter a task below to manage your goals.</p>
-                    <form>
-                        <label for="task-name">Enter task:</label>
-                        <input type="text" id="task-name" name="task-name">
-                        <button type="button" id="add-task">Add Task</button>
+                    <form id="task-form">
+                        <div class="mb-2">
+                            <label for="task-name">Enter task:</label>
+                            <input type="text" id="task-name" name="task-name" class="form-control" placeholder="Type a task here" required>
+                        </div>
+
+                        <div class="mb-2">
+                            <label for="task-priority">Priority:</label>
+                            <select id="task-priority" class="form-control">
+                                <option value="Low">Low</option>
+                                <option value="Medium">Medium</option>
+                                <option value="High">High</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-2 d-flex align-items-center gap-2">
+                        <input type="checkbox" id="task-important" class="form-check-input mt-0">
+                        <label for="task-important" class="form-check-label mb-0">Mark as Important</label>
+                        </div>
+
+                        <button type="button" id="add-task" class="btn btn-primary mb-2">Add Task</button>
+                        <button type="button" id="delete-list-btn" class="btn btn-danger mb-2">Delete Entire List</button>
                     </form>
                 </div>
             </div>
