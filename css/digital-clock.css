@@ -1,0 +1,22 @@
+#digital-clock {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+#clock-face {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #00ffcc;
+    margin-bottom: 10px;
+    font-family: monospace;
+}
+
+#calendar-date {
+    font-size: 1.1rem;
+    color: #cccccc;
+    margin-bottom: 0;
+}
